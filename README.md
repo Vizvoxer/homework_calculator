@@ -1,8 +1,8 @@
 # calculator
 
-> A Vue.js project
+> A Vue.js component-based calculator with Vuex state management
 
-## Build Setup
+## To launch the App open index.html file. Together with dist/ folder it is ready-to-launch App. If you want to explore in dev mode follow instructions below:
 
 ``` bash
 # install dependencies
