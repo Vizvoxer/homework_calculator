@@ -1,6 +1,7 @@
 <template>
-    <div class="c-output">
-        {{result}}
+    <div>
+    <input inputmode="numeric" class="c-output" :value="result" readonly>
+        <!--{{result}}-->
     </div>
 </template>
 
@@ -10,7 +11,9 @@
             result(){
                 return this.$store.state.output
             }
+
         }
+
     }
 </script>
 
@@ -19,6 +22,7 @@
         width:100%;
         height:100px;
         display:flex;
+        border:none;
         justify-content: center;
         align-items:center;
         color:white;

@@ -6,7 +6,6 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state:{
         output: 0,
-        firstArg: 0,
         operation: ""
     },
     mutations:{
@@ -32,10 +31,15 @@ export const store = new Vuex.Store({
             }
         },
         getResult(state){
-            if(state.output.length > 2) {
+            if(state.output.length > 2 && state.output.length <15) {
                 var result = eval(state.output);
                 isNaN( Number(result)) ? state.output = 'Infinity' : state.output = result;
 
+            } else{
+                state.output = "Incorrect value";
+                setTimeout(function(){
+                    state.output = "";
+                },2000)
             }
         }
     }

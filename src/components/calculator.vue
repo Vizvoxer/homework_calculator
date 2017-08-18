@@ -24,7 +24,7 @@
 
 <style lang="scss">
     #app{
-        width:350px;
+        width:338px;
         box-shadow:0 0 12px 3px rgba(20,20,20,0.6);
         display:flex;
         flex-wrap:wrap;
